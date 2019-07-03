@@ -14,7 +14,7 @@ class CrearTablaPersonas extends Migration
     public function up()
     {
         Schema::create('personas', function (Blueprint $table) {
-            $table->string('numero_documento')->unique();
+            $table->string('numero_documento');
             $table->string('tipo_documento')->unique();
             $table->string('primer_nombre');
             $table->string('segundo_nombre');
